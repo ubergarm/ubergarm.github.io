@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Blogging with Hexo | Fractured Notions</title>
+  <title>Blogging with Hexo | ubergarm's blog</title>
   <meta name="author" content="ubergarm">
   
   <meta name="description" content="What
@@ -17,7 +17,7 @@ Flat text documents make">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
   <meta property="og:title" content="Blogging with Hexo"/>
-  <meta property="og:site_name" content="Fractured Notions"/>
+  <meta property="og:site_name" content="ubergarm's blog"/>
 
   
     <meta property="og:image" content="undefined"/>
@@ -25,7 +25,7 @@ Flat text documents make">
 
   <link href="/favicon.png" rel="icon">
 
-  <link rel="alternate" href="/atom.xml" title="Fractured Notions" type="application/atom+xml">
+  <link rel="alternate" href="/atom.xml" title="ubergarm's blog" type="application/atom+xml">
 
   <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
 
@@ -79,15 +79,9 @@ Flat text documents make">
 <nav id="sub-nav">
   <div class="social">
     
-      <a class="google" href="http://plus.google.com/"
-         title="Google+">Google+</a>
     
     
-      <a class="twitter" href="http://twitter.com/"
-         title="Twitter">Twitter</a>
-    
-    
-      <a class="github" href="http://github.com/"
+      <a class="github" href="http://github.com/ubergarm"
          title="Github">Github</a>
     
     
@@ -142,13 +136,25 @@ Flat text documents make">
 <li>Because <a href="https://ghost.org/" target="_blank">ghost</a> seems more hipster than <a href="https://en.wikipedia.org/wiki/Sriracha_sauce" target="_blank">Sriracha sauce</a></li>
 </ol>
 <h3>How</h3>
-<p><a href="https://github.com/nuklly/hexo-theme-greyshade" target="_blank">Greyshade Theme</a></p>
+<ol>
+<li>Setup a <em>yourgithubusername</em>.github.io page following this <a href="http://www.thinkful.com/learn/a-guide-to-using-github-pages/" target="_blank">guide</a></li>
+<li>Follow the <a href="http://zespia.tw/hexo/docs/index.html" target="_blank">hexo documentation</a> install using <a href="https://github.com/creationix/nvm" target="_blank">Node Version Manager</a> similar to python&#39;s <a href="https://pypi.python.org/pypi/virtualenv" target="_blank">virtualenv</a></li>
+<li>Configure the <code>_configure.yml</code> file</li>
+</ol>
+<h3>ProTips</h3>
+<ol>
+<li>Play with some of the <a href="https://github.com/tommy351/hexo/wiki/Themes" target="_blank">hexo themes</a></li>
+<li><p>I kind of liked <a href="https://github.com/nuklly/hexo-theme-greyshade" target="_blank">Greyshade Theme</a></p>
+<p> $ cd ~/hexoblog/themes<br> $ git clone <a href="https://github.com/nuklly/hexo-theme-greyshade" target="_blank">https://github.com/nuklly/hexo-theme-greyshade</a> ./greyshade<br> $ vim ~/hexoblog/_config.yml # theme: greyshade </p>
+</li>
+</ol>
 <h3>Example Workflow</h3>
-<pre><code><span class="char">$ </span>cd ~/hexoblog
-<span class="char">$ </span>hexo new <span class="comment">"Great New Post"</span>
-# &lt;edit the .md file in vim&gt;
-<span class="char">$ </span>hexo generate
-<span class="char">$ </span>hexo deploy</code></pre>
+<pre><code>$ cd ~/hexoblog
+$ hexo <span class="keyword">new</span> page about # do this once <span class="keyword">to</span> <span class="keyword">generate</span> your about page
+$ hexo <span class="keyword">new</span> post <span class="string">"Great New Post"</span> # it defaults <span class="keyword">to</span> post so can omit that word
+# &lt;edit the .md <span class="keyword">file</span> <span class="keyword">in</span> vim&gt;
+$ hexo <span class="keyword">generate</span>
+$ hexo deploy</code></pre>
 </div>
 
 
@@ -158,10 +164,6 @@ Flat text documents make">
   <div class="addthis_toolbox addthis_default_style ">
   
   
-  <a class="addthis_button_tweet"></a>
-  
-  
-  <a class="addthis_button_google_plusone" g:plusone:size="medium"></a>
   
   
   </div>

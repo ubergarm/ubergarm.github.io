@@ -3,13 +3,16 @@
 <head>
   <meta charset="utf-8">
   
-  <title>ubergarm's blog</title>
+  <title>Blogging with Ghost 0.3.3 | ubergarm's blog</title>
   <meta name="author" content="ubergarm">
+  
+  <meta name="description" content="under docker on DigitalOcean
+Unfortunately, no one has infinite time to sort through all the nifty new sites/tools/apps floating around. Fortunately, ">
   
   
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-  
+  <meta property="og:title" content="Blogging with Ghost 0.3.3"/>
   <meta property="og:site_name" content="ubergarm's blog"/>
 
   
@@ -96,9 +99,7 @@
       </div><!-- left-col -->
       <div class="mid-col">
         <div class="mid-col-container">
-	    <div id="content" class="inner"><div itemscope itemtype="http://schema.org/Blog">
-
-  <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+	    <div id="content" class="inner"><article class="post" itemscope itemtype="http://schema.org/BlogPosting">
   
 	<div class="meta">
           
@@ -117,18 +118,9 @@
 
 </div>
 
-          
-
-
-          
 	</div>
-        <h1 class="title" itemprop="name">
-          <a href="/2013/10/27/blogging-with-ghost-033/" itemprop="url">
-            Blogging with Ghost 0.3.3</a>
-        </h1>
-        <div class="entry-content" itemprop="articleBody">
-          
-            <h3>under docker on DigitalOcean</h3>
+        <h1 class="title" itemprop="name">Blogging with Ghost 0.3.3</h1>
+      	<div class="entry-content" itemprop="articleBody"><h3>under docker on DigitalOcean</h3>
 <p>Unfortunately, no one has infinite time to sort through all the nifty new sites/tools/apps floating around. Fortunately, various ‘trending’ sites like github&#39;s trending repos tell us what is hot! That&#39;s how I stumbled across the blogging platform: <a href="http://ghost.org/" target="_blank">ghost</a></p>
 <p>The ghost site and designs look promising, so why not give it a try? Otherwise, I‘m just going to keep making more github/readme.md files which is not the most elegent solution when it comes to spewing my thoughts to the masses. Plus last time that ended up with over a dozen commits just to get my markdown correct (I don’t have a viewer installed). Ghost provides side by side Markdown editing / preview!</p>
 <p>I&#39;ve also been looking for an excuse to put my newfound favorite virtualization/container engine, <a href="http://www.docker.io/" target="_blank">docker</a> to work. (Move over vagrant+virtualbox+ansible!).</p>
@@ -206,138 +198,29 @@ Server version: <span class="number">0.6</span><span class="number">.4</span>
 <p>Maybe I&#39;ll check out some other blogging frameworks that fit my vim/git workfly then add the markdown viewing functionality using a different tool.</p>
 <h2><em>EDIT</em></h2>
 <p>I ended up going with hexo for now!</p>
-
-          
-        </div>
+</div>
 
 
 </article>
 
-
-
-
-  <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+  <div class="share">
+  <div class="addthis_toolbox addthis_default_style ">
   
-	<div class="meta">
-          
-<div class="date">
-
-<time datetime="2013-10-28T02:43:38.000Z"
-      
-      data-updated="true"
-       itemprop="datePublished">
-  Oct 27 2013
-</time>
-
-
-
-
-
-</div>
-
-          
-
-
-          
-	</div>
-        <h1 class="title" itemprop="name">
-          <a href="/2013/10/27/blogging-with-hexo/" itemprop="url">
-            Blogging with Hexo</a>
-        </h1>
-        <div class="entry-content" itemprop="articleBody">
-          
-            <h3>What</h3>
-<p>Set up a Node.js powered flat file blog using <a href="http://zespia.tw/hexo/" target="_blank">hexo</a> hosted on <a href="http://pages.github.com/" target="_blank">github pages</a>.</p>
-<h3>Why</h3>
-<ol>
-<li>You can use your own editor! (hint: <em>vim</em>)</li>
-<li>Flat text documents make mouths happy!</li>
-<li>You can revision control everything through git!</li>
-<li>Cheap as free to get started!</li>
-<li>Learn you some hot node.js!</li>
-<li>Because <a href="https://ghost.org/" target="_blank">ghost</a> seems more hipster than <a href="https://en.wikipedia.org/wiki/Sriracha_sauce" target="_blank">Sriracha sauce</a></li>
-</ol>
-<h3>How</h3>
-<ol>
-<li>Setup a <em>yourgithubusername</em>.github.io page following this <a href="http://www.thinkful.com/learn/a-guide-to-using-github-pages/" target="_blank">guide</a></li>
-<li>Follow the <a href="http://zespia.tw/hexo/docs/index.html" target="_blank">hexo documentation</a> install using <a href="https://github.com/creationix/nvm" target="_blank">Node Version Manager</a> similar to python&#39;s <a href="https://pypi.python.org/pypi/virtualenv" target="_blank">virtualenv</a></li>
-<li>Configure the <code>_configure.yml</code> file</li>
-</ol>
-<h3>ProTips</h3>
-<ol>
-<li>Play with some of the <a href="https://github.com/tommy351/hexo/wiki/Themes" target="_blank">hexo themes</a></li>
-<li><p>I kind of liked <a href="https://github.com/nuklly/hexo-theme-greyshade" target="_blank">Greyshade Theme</a></p>
-<p> $ cd ~/hexoblog/themes<br> $ git clone <a href="https://github.com/nuklly/hexo-theme-greyshade" target="_blank">https://github.com/nuklly/hexo-theme-greyshade</a> ./greyshade<br> $ vim ~/hexoblog/_config.yml # theme: greyshade </p>
-</li>
-</ol>
-<h3>Example Workflow</h3>
-<pre><code>$ cd ~/hexoblog
-$ hexo <span class="keyword">new</span> page about # do this once <span class="keyword">to</span> <span class="keyword">generate</span> your about page
-$ hexo <span class="keyword">new</span> post <span class="string">"Great New Post"</span> # it defaults <span class="keyword">to</span> post so can omit that word
-# &lt;edit the .md <span class="keyword">file</span> <span class="keyword">in</span> vim&gt;
-$ hexo <span class="keyword">generate</span>
-$ hexo deploy</code></pre>
-
-          
-        </div>
-
-
-</article>
-
-
-
-
-  <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
   
-	<div class="meta">
-          
-<div class="date">
-
-<time datetime="2013-10-28T02:35:06.000Z"
-      
-      data-updated="true"
-       itemprop="datePublished">
-  Oct 27 2013
-</time>
-
-
-
-
-
+  
+  
+  </div>
+  <script type="text/javascript">
+    var addthis_config = {"data_track_addressbar":true};
+  </script>
+  <script type="text/javascript"
+          src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=null">
+  </script>
 </div>
 
-          
-
-
-          
-	</div>
-        <h1 class="title" itemprop="name">
-          <a href="/2013/10/27/hello-world/" itemprop="url">
-            Hello World</a>
-        </h1>
-        <div class="entry-content" itemprop="articleBody">
-          
-            <p><em>This is the default first post from hexo.  I left it here.</em></p>
-<p>Welcome to <a href="http://zespia.tw/hexo" target="_blank">Hexo</a>! This is your very first post. Check <a href="http://zespia.tw/hexo/docs" target="_blank">documentation</a> to learn how to use.</p>
-
-          
-        </div>
-
-
-</article>
 
 
 
-
-</div>
-
-<nav id="pagenavi">
-    
-    
-    <div class="center">
-      <a href="archives">Blog Archives</a>
-    </div>
-</nav>
 </div>
 	</div>
         <footer id="footer" class="inner">
